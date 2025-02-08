@@ -12,7 +12,7 @@ using namespace std;
 enum TokenType{
     TOK_EOF = 0,
     TOK_DEF,
-    TOK_IDENTIFIER;
+    TOK_IDENTIFIER,
     TOK_NUMBER,
     TOK_OPERATOR
 };
