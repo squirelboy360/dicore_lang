@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicore Programming Language</title>
+</head>
+<body>
+
+<h1>Dicore Programming Language 🚀</h1>
+
+<p>Welcome to <strong>Dicore</strong>, a custom programming language designed to explore <strong>compiler development</strong>, <strong>language design</strong>, and <strong>software architecture</strong>. It uses <strong>LLVM</strong> to generate machine code and currently supports basic token parsing and expression evaluation.</p>
+
+<h2>🛠 Project Structure</h2>
+
+<h3>Folders</h3>
+<ul>
+    <li><strong>frontend/</strong>: Contains code for parsing and interpreting the source code.</li>
+    <li><strong>backend/</strong>: Contains code for interacting with LLVM to generate machine code.</li>
+</ul>
+
+<h3>📂 Frontend Components</h3>
+<ul>
+    <li><strong>Lexer</strong> (<code>lexer.h</code> & <code>lexer.cpp</code>): Converts source code into tokens (numbers, operators, keywords).</li>
+    <li><strong>Token</strong> (<code>token.h</code> & <code>token.cpp</code>): Categorizes the tokens (e.g., numbers, operators).</li>
+    <li><strong>AST (Abstract Syntax Tree)</strong> (<code>ast.h</code> & <code>ast.cpp</code>): Represents the structure of parsed code.</li>
+    <li><strong>Parser</strong> (<code>parser.h</code> & <code>parser.cpp</code>): Converts tokens into an AST while ensuring syntactical correctness.</li>
+</ul>
+
+<h3>🔧 Backend Components</h3>
+<ul>
+    <li><strong>Compiler</strong> (<code>compiler.h</code> & <code>compiler.cpp</code>): Uses LLVM to convert the AST into LLVM Intermediate Representation (IR) and generates machine code.</li>
+    <li><strong>CMakeLists.txt</strong>: Configures the build system with CMake and links necessary dependencies.</li>
+</ul>
+
+<h2>🚀 Getting Started</h2>
+
+<h3>1. Install Dependencies</h3>
+<p>You'll need <strong>LLVM</strong> and <strong>CMake</strong> to compile and run the Dicore language.</p>
+
+<ul>
+    <li>Install <strong>LLVM</strong> on macOS using Homebrew:
+        <pre><code>brew install llvm@14</code></pre>
+    </li>
+    <li>Ensure LLVM tools are in your <strong>PATH</strong> by adding:
+        <pre><code>export LDFLAGS="-L/opt/homebrew/opt/llvm@14/lib"</code></pre>
+        <pre><code>export CPPFLAGS="-I/opt/homebrew/opt/llvm@14/include"</code></pre>
+    </li>
+</ul>
+
+<h3>2. Build the Project</h3>
+<p>After setting up dependencies, build the project using <strong>CMake</strong>:</p>
+
+<pre><code>mkdir build
+cd build
+cmake ..
+make</code></pre>
+
+<p>This will generate the executable.</p>
+
+<h3>3. Running the Compiler</h3>
+<p>To run the Dicore compiler with your source code, use the following command:</p>
+
+<pre><code>./dicore_lang path_to_source_code.dicore</code></pre>
+
+<p>The compiler will generate machine code from your <code>.dicore</code> file.</p>
+
+<h2>✅ What I've Accomplished So Far</h2>
+
+<h3>✔️ Completed Features</h3>
+<ul>
+    <li><strong>Lexer</strong>: Tokenizes source code into meaningful components.</li>
+    <li><strong>Parser</strong>: Converts tokens into an Abstract Syntax Tree (AST).</li>
+    <li><strong>AST</strong>: Represents code structure.</li>
+    <li><strong>Compiler</strong>: Uses LLVM to generate machine code from the AST.</li>
+</ul>
+
+<h3>🛑 Current Limitations</h3>
+<ul>
+    <li>Currently, the language only supports basic expressions (numbers).</li>
+    <li>It doesn't support advanced features like functions, conditionals, or loops yet.</li>
+</ul>
+
+<h2>📝 Future Improvements</h2>
+
+<h3>1. Add More Data Types 🔢</h3>
+<ul>
+    <li>Implement support for strings, booleans, and custom types like enums.</li>
+</ul>
+
+<h3>2. Add Functions 🧑‍💻</h3>
+<ul>
+    <li>Introduce support for defining and calling functions in the language.</li>
+</ul>
+
+<h3>3. Implement Control Flow 🔄</h3>
+<ul>
+    <li>Add support for conditional statements (e.g., <code>if</code>, <code>else</code>) and loops (e.g., <code>for</code>, <code>while</code>).</li>
+</ul>
+
+<h3>4. Add Error Handling ⚠️</h3>
+<ul>
+    <li>Improve the lexer, parser, and compiler to handle syntax errors more gracefully and give detailed error messages.</li>
+</ul>
+
+</body>
+</html>

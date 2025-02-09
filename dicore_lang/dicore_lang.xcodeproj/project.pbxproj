@@ -33,6 +33,11 @@
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		3CC4AEA92D59698A00E03E8B /* docs */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = docs;
+			sourceTree = "<group>";
+		};
 		3CDC35102D5679E70076965F /* dicore_lang */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -59,6 +64,7 @@
 			children = (
 				3CDC35102D5679E70076965F /* dicore_lang */,
 				3CDC350F2D5679E70076965F /* Products */,
+				3CC4AEA92D59698A00E03E8B /* docs */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +92,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				3CC4AEA92D59698A00E03E8B /* docs */,
 				3CDC35102D5679E70076965F /* dicore_lang */,
 			);
 			name = dicore_lang;
