@@ -9,6 +9,10 @@
 using namespace std;
 
 int main (){
-    cout<<"Test"<<endl;
+    string num = "hello0000";
+    
+    num+=5;  // Shifts the string by removing the first character
+    
+    cout << num << std::endl;  // Outputs: "ello"
     return 0;
 }
