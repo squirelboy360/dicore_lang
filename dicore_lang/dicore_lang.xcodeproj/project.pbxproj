@@ -22,9 +22,22 @@
 		3CDC350E2D5679E70076965F /* dicore_lang */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dicore_lang; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		3CC4AE502D5960E200E03E8B /* Exceptions for "dicore_lang" folder in "Compile Sources" phase from "dicore_lang" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 3CDC350A2D5679E70076965F /* Sources */;
+			membershipExceptions = (
+				frontend/parser.h,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3CDC35102D5679E70076965F /* dicore_lang */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3CC4AE502D5960E200E03E8B /* Exceptions for "dicore_lang" folder in "Compile Sources" phase from "dicore_lang" target */,
+			);
 			path = dicore_lang;
 			sourceTree = "<group>";
 		};
