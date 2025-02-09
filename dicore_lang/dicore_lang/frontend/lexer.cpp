@@ -21,7 +21,7 @@ Token Lexer::getNextToken(){
         if(isdigit(source[current])){
             string num;
             while (current<source.length()&&isdigit(source[current])){
-//   the number appends up to a total of the selected charecter's index in the source increased by one depending on how many times the condition of a char being a digit is met;
+                //   the number appends up to a total of the selected charecter's index in the source increased by one depending on how many times the condition of a char being a digit is met;
                 num+= source[current++];
                 return Token(TOK_NUMBER, stod(num));
             }
@@ -32,7 +32,15 @@ Token Lexer::getNextToken(){
             while (current<source.length()&&source[current] == '_'){
                 identifier += source[current++];
             }
+            if (identifier == "do"){
+                return Token(TOK_IDENTIFIER,identifier);
+            }
+            if(ispunct(source[current])){
+                return Token(TOK_OPERATOR, string(1,source[current++]));
+            }
         }
     }
-}
+        return Token(TOK_EOF, "");
+    }
+
 
